@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up</title>
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <div class="container">
+    <div class="forms-container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign In</h2>
+                
+                <div class="input-field">
+                    <i class='bx bx-user'></i>
+                    <input type="text" placeholder="Username">
+                </div> <!-- /.input-field -->
+                <div class="input-field">
+                    <i class='bx bx-lock'></i>
+                    <input type="password" placeholder="Password">
+                </div> <!-- /.input-field -->
+
+                <input type="submit" value="Login" class="btn solid">
+
+                <p class="social-text">Or Sign in with social platforms</p>
+
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-google'></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                </div> <!-- /.social media -->
+            </form>
+
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign Up</h2>
+                
+                <div class="input-field">
+                    <i class='bx bx-user'></i>
+                    <input type="text" placeholder="Username">
+                </div> <!-- /.input-field -->
+
+                <div class="input-field">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" placeholder="Email">
+                </div> <!-- /.input-field -->
+
+                <div class="input-field">
+                    <i class='bx bx-lock'></i>
+                    <input type="password" placeholder="Password">
+                </div> <!-- /.input-field -->
+
+                <div class="input-field">
+                    <i class='bx bx-lock'></i>
+                    <input type="password" placeholder="Confirm Password">
+                </div> <!-- /.input-field -->
+
+                <input type="submit" value="Sign up" class="btn solid">
+
+                <p class="social-text">Or Sign Up with social platforms</p>
+
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-google'></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                </div> <!-- /.social media -->
+            </form>
+        </div>
+    </div> <!-- /.forms.container -->
+
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Register here?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur dignissimos fugiat?</p>
+                <a href="#" class="btn btn-outline" id="sign-up-btn">Sign up</a>
+            </div> <!-- /.content -->
+            <img src="img/vectorpaint.svg" alt="login" class="image">
+        </div> <!-- /.panel left-panel -->
+
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>Login here?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur dignissimos fugiat?</p>
+                <a href="#" class="btn btn-outline" id="sign-in-btn">Sign In</a>
+            </div> <!-- /.content -->
+            <img src="img/undraw_secure_login_pdn4.svg" alt="login" class="image">
+        </div> <!-- /.panel right-panel -->
+
+
+    </div> <!-- ./panels-container -->
+  </div> <!-- /.container -->
+
+
+  <script>
+      const signInBtn = document.getElementById('sign-in-btn');
+      const signUpBtn = document.getElementById('sign-up-btn');
+      const container = document.querySelector('.container');
+
+      signUpBtn.addEventListener('click', () => {
+        container.classList.add("sign-up-mode");
+      });
+
+      signInBtn.addEventListener('click', () => {
+        container.classList.remove("sign-up-mode");
+      });
+
+ </script>
+</body>
+</html>
